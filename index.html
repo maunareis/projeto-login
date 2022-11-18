@@ -5,21 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
+
     <title>Login</title>
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-
+                <!-- A imagem de fundo foi adicionada através do CSS. -->
+            
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post">
 
-                    
+                    <label for="cpusuario"><span id="usuario" class="material-symbols-outlined">person</span></label>
+                    <input type="text" name="cpusuario" id="cpusuario"> <br>
+                    <label for="cpsenha"><span id="senha" class="material-symbols-outlined">vpn_key</span></label>
+                    <input type="password" name="cpsenha" id="cpsenha"> <br>
+                    <input type="submit" value="Entrar">
+
+
                 </form>
             </div>
         </section>
