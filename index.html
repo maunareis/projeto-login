@@ -21,14 +21,20 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
 
-                    <label for="cpusuario"><span id="usuario" class="material-symbols-outlined">person</span></label>
-                    <input type="text" name="cpusuario" id="cpusuario"> <br>
-                    <label for="cpsenha"><span id="senha" class="material-symbols-outlined">vpn_key</span></label>
-                    <input type="password" name="cpsenha" id="cpsenha"> <br>
+                    <div class="campo">
+                        <label for="cpusuario"><span id="usuario" class="material-symbols-outlined">person</span></label>
+                        <input type="email" name="cpusuario" id="cpusuario" autocomplete="email" required maxlength="30"><br>
+                    </div>
+                    <div class="campo">
+                        <label for="cpsenha"><span id="senha" class="material-symbols-outlined">vpn_key</span></label>
+                        <input type="password" name="cpsenha" id="cpsenha" autocomplete="current-password" required minlength="8" maxlength="20"> <br>
+                    </div>
                     <input type="submit" value="Entrar">
-
+                    <a href="esqueci.html">
+                        Esqueci a senha <span class="material-symbols-outlined">mail</span>
+                    </a>
 
                 </form>
             </div>
